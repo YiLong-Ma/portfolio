@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Link from 'next/link';
+import ScrollAnimation from "@/components/ScrollAnimation";
+import CardComponent from "@/components/CardComponent";
 
 
 export default function Home() {
@@ -26,23 +28,18 @@ export default function Home() {
           <div className={styles.rightContainer}>
             <button className={styles.btn}>Contact Me</button>
             <span className={styles.viewp}>View Project</span>
-            <div className={styles.mouseScroll}>
-              <div className={styles.mouse}>
-                <div className={styles.mouseIn}></div>
-              </div>
-              <div>
-                <span className={styles.downArrow1}></span>
-                <span className={styles.downArrow2}></span>
-                <span className={styles.downArrow3}></span>
-              </div>
-            </div>
+            <ScrollAnimation />
           </div>
         </div>
 
         <div className={styles.lowerContainer}>
           <div className={styles.upperBox}>
             <Link href="/caseStudy">
-              <div className={styles.projectBox}> </div>
+              <CardComponent
+                imageUrl="/images/psproject.jpg"
+                title="Your Card Title"
+                description="Your card description goes here."
+              />
             </Link>
             <div className={styles.projectBox}>
 
