@@ -1,5 +1,4 @@
-import styles from '../styles/caseStudy.module.css';
-import CardComponent from '@/components/CardComponent';
+import styles from '../styles/CaseStudy.module.css';
 
 export default function CaseStudy() {
     return (

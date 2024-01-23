@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../styles/CardComponent.module.css';
-import Image from 'next/image';
 
 interface CardProps {
     imageUrl: string;
