@@ -36,7 +36,7 @@ export default function Home() {
           <div className={styles.upperBox}>
             <Link href="/caseStudy">
               <CardComponent
-                imageUrl="/images/psproject.jpg"
+                imageUrl="/images/t2.jpg"
                 title="Project 1"
                 description="Description of project"
               />
