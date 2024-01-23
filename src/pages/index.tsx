@@ -37,22 +37,34 @@ export default function Home() {
             <Link href="/caseStudy">
               <CardComponent
                 imageUrl="/images/psproject.jpg"
-                title="Your Card Title"
-                description="Your card description goes here."
+                title="Project 1"
+                description="Description of project"
               />
             </Link>
-            <div className={styles.projectBox}>
-
-            </div>
+            <Link href="#">
+              <CardComponent
+                imageUrl="/images/psproject.jpg"
+                title="Project 2"
+                description="Description of project"
+              />
+            </Link>
           </div>
 
           <div className={styles.lowerBox}>
-            <div className={styles.projectBox}>
-
-            </div>
-            <div className={styles.projectBox}>
-
-            </div>
+            <Link href="#">
+              <CardComponent
+                imageUrl="/images/psproject.jpg"
+                title="Project 3"
+                description="Description of project"
+              />
+            </Link>
+            <Link href="#">
+              <CardComponent
+                imageUrl="/images/psproject.jpg"
+                title="Project 4"
+                description="Description of project"
+              />
+            </Link>
           </div>
         </div>
 

@@ -10,11 +10,6 @@ export default function CaseStudy() {
                 <h1>Project 3</h1>
                 <h1>Project 4</h1>
                 <div>
-                    <CardComponent
-                        imageUrl="/images/test.jpg"
-                        title="Your Card Title"
-                        description="Your card description goes here."
-                    />
                 </div>
             </main>
         </>
