@@ -1,4 +1,4 @@
-import styles from '../styles/scrollAnimation.module.css'
+import styles from '../styles/ScrollAnimation.module.css'
 
 export default function ScrollAnimation() {
     return (
