@@ -35,7 +35,7 @@ const Home: React.FC<HomeProps> = () => {
 
         <div className={styles.lowerContainer}>
           <div className={styles.upperBox}>
-            <Link href="/caseStudy">
+            <Link href="/project1">
               <CardComponent
                 imageUrl="/HumphreyIcons/newHabitsCover.png"
                 title="New Habits"
