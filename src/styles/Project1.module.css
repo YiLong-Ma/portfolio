@@ -60,7 +60,7 @@
     font-size: 2rem;
     font-weight: 600;
     color: #48444B;
-    padding: 2vh;
+    padding-bottom: 2vh;
     justify-content: center;
 }
 
@@ -68,8 +68,7 @@
     font-size: 1rem;
     font-weight: 500;
     color: #48444B;
-    padding: 2vh;
-    justify-content: center;
+    justify-content: left;
     width: 25rem;
 }
 
@@ -89,3 +88,18 @@
     justify-content: center;
     width: 20rem;
 }
+
+.btn {
+    width: 15vh;
+    height: 4vh;
+    border: 0.2rem solid #CABDB9;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #48444B;
+    font-size: 1.5vh;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+

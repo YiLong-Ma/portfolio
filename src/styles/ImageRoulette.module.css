@@ -2,13 +2,15 @@
     position: relative;
     width: 700px; /* Adjust the width as needed */
     height: 450px; /* Adjust the height as needed */
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .image {
     width: 100%;
     height: 100%;
-    background-size: contain;
+    background-size:contain;
+    justify-content: center;
+    align-items: center;
     transition: background-image 0.7s ease-in-out;
   }
   
@@ -20,15 +22,15 @@
     font-size: 64px;
     background: transparent;
     border: none;
-    color: #fff;
+    color: #CABDB9;
     cursor: pointer;
     outline: none;
   }
   
   .prevButton {
-    left: 10px;
+    left: 2px;
   }
   
   .nextButton {
-    right: 10px;
+    right: 2px;
   }

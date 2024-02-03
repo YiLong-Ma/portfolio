@@ -37,7 +37,7 @@ const Home: React.FC<HomeProps> = () => {
           <div className={styles.upperBox}>
             <Link href="/caseStudy">
               <CardComponent
-                imageUrl="/images/newHabitsCover.png"
+                imageUrl="/HumphreyIcons/newHabitsCover.png"
                 title="New Habits"
                 description="New Habits is a app that helps people identify drug addiction for themselves or their loved ones. 
                 It will ask multiple questions to determine if the user is addicted to drugs and the severity level."
