@@ -45,7 +45,7 @@ const Home: React.FC<HomeProps> = () => {
             </Link>
             <Link href="project3">
               <CardComponent
-                imageUrl="/images/psproject.jpg"
+                imageUrl="/tinypaws/cover.png"
                 title="Project 3"
                 description="Description of project"
               />
