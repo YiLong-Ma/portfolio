@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
 .main {
     height: 205vh;
     justify-content: top;
@@ -5,32 +33,36 @@
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
-  }
+}
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15vw;
+    gap: 13vw;
+    font-size: 2.5rem;
 }
 
-.h1{
-    font-size: 2rem;
-    font-weight: 700;
+.h1 {
+    font-size: 2.3rem;
     border-bottom: 0.3vh solid #48444B;
     padding-bottom: 0.5vh;
     color: #48444B;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
-.h{
-    font-size: 2rem;
+.h {
+    font-size: 2.5rem;
     font-weight: 700;
     color: #CABDB9;
     padding-bottom: 0.5vh;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
-.information{
+.information {
     display: flex;
     flex-direction: row;
     align-items: top;
@@ -41,38 +73,42 @@
 }
 
 .imageContainer {
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
 
-.infoDisplay{
+.infoDisplay {
     border: 0.3vh solid #48444B;
-    width:40vw;
+    width: 40vw;
     height: 40vh;
 }
 
-.infoTitle{
+.infoTitle {
     font-size: 2rem;
     font-weight: 600;
     color: #48444B;
     padding-bottom: 2vh;
     justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 }
 
-.infoText{
-    font-size: 1rem;
+.infoText {
+    font-size: 1.1rem;
     font-weight: 500;
     color: #48444B;
     justify-content: left;
     width: 25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
-.body1{
+.body1 {
     display: flex;
     margin-top: 10vh;
     flex-direction: row;
@@ -80,7 +116,7 @@
     margin-bottom: 20vh;
 }
 
-.bodyText1{
+.bodyText1 {
     font-size: 1rem;
     font-weight: 500;
     color: #48444B;
@@ -101,5 +137,5 @@
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
-  }
-
+    font-family: "Open Sans", sans-serif;
+}
