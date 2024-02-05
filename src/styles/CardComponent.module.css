@@ -1,8 +1,37 @@
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+
 .card {
   width: 45vh;
   height: 55vh;
   transform-style: preserve-3d;
-  transition: transform 1s ease; /* Adjusted transition property */
+  transition: transform 1s ease; 
   margin: 20px;
 }
 
@@ -12,6 +41,7 @@
   background-position: center;
   height: 100%;
   width: 100%;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2);
 }
 
 .cardBody {
@@ -24,7 +54,8 @@
   border-radius: 20px;
   overflow: hidden;
   border: 5px solid #CABDB9;
-  transition: transform 1s ease; /* Added transition property */
+  transition: transform 1s ease; 
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -36,7 +67,7 @@
   background: #fff;
   border-radius: 100px;
   width: 0%;
-  transition: width 0.5s ease; /* Adjusted transition property */
+  transition: width 0.5s ease;
 }
 
 .cardBody .bg:nth-child(1) {
@@ -81,17 +112,32 @@
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease; /* Adjusted transition property */
   padding: 40px 10px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
-  font-size: 60px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: #292929;
   text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 .card:hover .content {
   opacity: 1;
   transition-delay: 2.2s;
+}
+
+.para{
+  font-size: 20px;
+  color: #292929;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  width: 17rem;
+  padding-left: 3.2rem;
 }

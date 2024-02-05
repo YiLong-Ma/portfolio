@@ -43,21 +43,22 @@ const Home: React.FC<HomeProps> = () => {
                 It will ask multiple questions to determine if the user is addicted to drugs and the severity level."
               />
             </Link>
-            <Link href="#">
+            <Link href="project3">
               <CardComponent
                 imageUrl="/images/psproject.jpg"
-                title="Project 2"
+                title="Project 3"
                 description="Description of project"
               />
             </Link>
           </div>
 
           <div className={styles.lowerBox}>
-            <Link href="#">
+            <Link href="project2">
               <CardComponent
-                imageUrl="/images/psproject.jpg"
-                title="Project 3"
-                description="Description of project"
+                imageUrl="/keyboard/cover.png"
+                title="Keyboard Animation"
+                description="This is a short 1 minute animation created in After Effects. The animation goes through different
+                parts of a keyboard and what each part does."
               />
             </Link>
             <Link href="#">

@@ -18,7 +18,7 @@ const project2: React.FC = () => {
         <div className={styles.header}>
           <h1 className={styles.h}><Link href="/project1" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 1</Link></h1>
           <h1 className={styles.h1}><Link href="/project2" style={{ textDecoration: 'none', color: '#48444B' }}>Project 2</Link></h1>
-          <h1 className={styles.h}><Link href="#" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 3</Link></h1>
+          <h1 className={styles.h}><Link href="/project3" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 3</Link></h1>
           <h1 className={styles.h}><Link href="#" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 4</Link></h1>
         </div>
         <div className={styles.information}>
@@ -81,7 +81,7 @@ const project2: React.FC = () => {
             </div>
           </div>
 
-
+{/* 
           <div className={styles.body1}>
             <div><ImageRoulette images={images3} id="roulette3" /></div>
             <div className={styles.bodyText1}>
@@ -92,7 +92,7 @@ const project2: React.FC = () => {
                 harmful to the eyes.
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </main>
