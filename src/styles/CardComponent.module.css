@@ -109,6 +109,8 @@
 
 .content {
   position: relative;
+  display: flex;
+  flex-direction: column;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease; /* Adjusted transition property */
   padding: 40px 10px;
@@ -139,5 +141,4 @@
   line-height: 1.5;
   text-align: left;
   width: 17rem;
-  padding-left: 3.2rem;
 }
