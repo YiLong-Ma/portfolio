@@ -4,8 +4,10 @@ import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import ScrollAnimation from "../components/ScrollAnimation";
 import CardComponent from "../components/CardComponent";
+import BackgroundComponent from "@/components/Background";
 
-interface HomeProps {}
+
+interface HomeProps { }
 
 const Home: React.FC<HomeProps> = () => {
   return (
@@ -18,6 +20,7 @@ const Home: React.FC<HomeProps> = () => {
       </Head>
 
       <main className={styles.main}>
+      <BackgroundComponent /> 
         <div className={styles.upperContainer}>
           <div className={styles.leftContainer}>
             <span className={styles.name}>Elijah Chan</span>
@@ -45,9 +48,9 @@ const Home: React.FC<HomeProps> = () => {
             </Link>
             <Link href="project3">
               <CardComponent
-                imageUrl="/images/psproject.jpg"
+                imageUrl="/tinyPaws/4.png"
                 title="Project 3"
-                description="Description of project"
+                description="Tinypaws is a cat adoption website aimed to help people find their perfect cat. With bringing light to neglected cats in mind"
               />
             </Link>
           </div>
