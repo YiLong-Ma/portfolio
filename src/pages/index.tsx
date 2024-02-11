@@ -48,9 +48,9 @@ const Home: React.FC<HomeProps> = () => {
             </Link>
             <Link href="project3">
               <CardComponent
-                imageUrl="/images/psproject.jpg"
+                imageUrl="/tinypaws/4.png"
                 title="Project 3"
-                description="Description of project"
+                description="Tinypaws is a cat adoption website aimed to help people find their perfect cat. With bringing light to neglected cats in mind"
               />
             </Link>
           </div>
