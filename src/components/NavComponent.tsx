@@ -22,7 +22,7 @@ const NavComponent: React.FC = () => {
             </div>
 
             <div className={styles.navLinks}>
-                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/elijahrc-chan" target="_blank">LinkedIn</a>
                 <a href="#" target="_blank">Resume</a>
                 <a href="#" target="_blank">Contact</a>
             </div>
