@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import ImageRoulette from '@/components/imageRoulette';
 import BackgroundComponent from "@/components/Background";
+import NavComponent from '@/components/NavComponent';
 
 const project1: React.FC = () => {
     const images1 = ['/tinypaws/1.png', '/tinypaws/2.png', '/tinypaws/3.png', '/tinypaws/4.png', '/tinypaws/5.png'];
@@ -14,7 +15,8 @@ const project1: React.FC = () => {
     return (
         <>
             <main className={styles.main}>
-            <BackgroundComponent /> 
+                <NavComponent />
+                <BackgroundComponent />
                 <div className={styles.header}>
                     <h1 className={styles.h}><Link href="/project1" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 1</Link></h1>
                     <h1 className={styles.h}><Link href="/project2" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 2</Link></h1>
@@ -45,8 +47,8 @@ const project1: React.FC = () => {
                         <div className={styles.bodyText1}>
                             <div className={styles.infoTitle}>The Style Guide</div>
                             <div className={styles.infoText}>Tinypaws was designed to be friendly, easy to use and easy to navigate,
-                            and so the colours and fonts were chosen to reflect that. The colour scheme was made to be soft and not harmful to the eyes.
-                            orange colours were chosen because they are friendly and inviting. The fonts were chosen to be rounded, soft and easy to read.
+                                and so the colours and fonts were chosen to reflect that. The colour scheme was made to be soft and not harmful to the eyes.
+                                orange colours were chosen because they are friendly and inviting. The fonts were chosen to be rounded, soft and easy to read.
                             </div>
                             <button className={styles.btn}>
                                 <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/RhxeuuIO366EJiKVQJbZMJ/tinypaws---purradise?type=design&node-id=243-3051&t=Nz2bQmRDlrlRVMp3-1&scaling=min-zoom&page-id=238%3A3002&mode=design" target='_blank'>
@@ -60,9 +62,9 @@ const project1: React.FC = () => {
                         <div className={styles.bodyText1}>
                             <div className={styles.infoTitle}>Planning and Ideation</div>
                             <div className={styles.infoText}>Using figma, the website was planned and ideated. The website was planned to be easy to
-                            navigate and understand. The planning oh how the website would look took 2 levels of planning. The first level was a basic 
-                            draft on the overall consistant feel of the website. The second level was the planning of the individual pages and how they would look.
-                            finally, after the two levels were complete, the lo-fi version was ready to be made.
+                                navigate and understand. The planning oh how the website would look took 2 levels of planning. The first level was a basic
+                                draft on the overall consistant feel of the website. The second level was the planning of the individual pages and how they would look.
+                                finally, after the two levels were complete, the lo-fi version was ready to be made.
                             </div>
                         </div>
                         <div><ImageRoulette images={images2} id="roulette2" /></div>
@@ -72,8 +74,8 @@ const project1: React.FC = () => {
                         <div><ImageRoulette images={images3} id="roulette3" /></div>
                         <div className={styles.bodyText1}>
                             <div className={styles.infoTitle}>Design</div>
-                            <div className={styles.infoText}>The design was to to showcase cats for adoption, so the team put lots of images of cats on the website for 
-                            users to see. 
+                            <div className={styles.infoText}>The design was to to showcase cats for adoption, so the team put lots of images of cats on the website for
+                                users to see.
                             </div>
                             <button className={styles.btn}>
                                 <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/jwQtp1e8FBRAKCCgcckOVG/Baja-Design?type=design&node-id=246-29&t=HTH3VeL2Nk4iXiBh-1&scaling=scale-down&page-id=243%3A29&starting-point-node-id=246%3A29&mode=design" target='_blank'>

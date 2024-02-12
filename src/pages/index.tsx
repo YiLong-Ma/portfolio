@@ -5,6 +5,7 @@ import Link from "next/link";
 import ScrollAnimation from "../components/ScrollAnimation";
 import CardComponent from "../components/CardComponent";
 import BackgroundComponent from "@/components/Background";
+import NavComponent from "@/components/NavComponent";
 
 
 interface HomeProps { }
@@ -18,9 +19,9 @@ const Home: React.FC<HomeProps> = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <NavComponent />
       <main className={styles.main}>
-      <BackgroundComponent /> 
+        <BackgroundComponent />
         <div className={styles.upperContainer}>
           <div className={styles.leftContainer}>
             <span className={styles.name}>Elijah Chan</span>
@@ -30,7 +31,6 @@ const Home: React.FC<HomeProps> = () => {
             </span>
           </div>
           <div className={styles.rightContainer}>
-            <button className={styles.btn}>Contact Me</button>
             <span className={styles.viewp}>View Project</span>
             <ScrollAnimation />
           </div>

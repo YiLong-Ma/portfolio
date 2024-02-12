@@ -6,6 +6,7 @@ import ImageRoulette from '@/components/imageRoulette';
 import AudioRoulette from '@/components/AudioRoulette';
 import Image from 'next/image';
 import BackgroundComponent from "@/components/Background";
+import NavComponent from '@/components/NavComponent';
 
 const project2: React.FC = () => {
   const images1 = ['/keyboard/5.png', '/keyboard/1.png', '/keyboard/2.png', '/keyboard/3.png', '/keyboard/4.png'];
@@ -16,7 +17,8 @@ const project2: React.FC = () => {
   return (
     <>
       <main className={styles.main}>
-      <BackgroundComponent /> 
+        <NavComponent />
+        <BackgroundComponent />
         <div className={styles.header}>
           <h1 className={styles.h}><Link href="/project1" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 1</Link></h1>
           <h1 className={styles.h1}><Link href="/project2" style={{ textDecoration: 'none', color: '#48444B' }}>Project 2</Link></h1>
@@ -83,7 +85,7 @@ const project2: React.FC = () => {
             </div>
           </div>
 
-{/* 
+          {/* 
           <div className={styles.body1}>
             <div><ImageRoulette images={images3} id="roulette3" /></div>
             <div className={styles.bodyText1}>

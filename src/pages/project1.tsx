@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import ImageRoulette from '@/components/imageRoulette';
 import BackgroundComponent from "@/components/Background";
+import NavComponent from '@/components/NavComponent';
 
 const project1: React.FC = () => {
     const images1 = ['/HumphreyIcons/11.png', '/HumphreyIcons/12.png', '/HumphreyIcons/13.png', '/HumphreyIcons/14.png', '/HumphreyIcons/15.png', '/HumphreyIcons/16.png', '/HumphreyIcons/17.png', '/HumphreyIcons/18.png', '/HumphreyIcons/19.png', '/HumphreyIcons/20.png', '/HumphreyIcons/21.png'];
@@ -14,7 +15,8 @@ const project1: React.FC = () => {
     return (
         <>
             <main className={styles.main}>
-            <BackgroundComponent /> 
+                <NavComponent />
+                <BackgroundComponent />
                 <div className={styles.header}>
                     <h1 className={styles.h1}><Link href="/project1" style={{ textDecoration: 'none', color: '#48444B' }}>Project 1</Link></h1>
                     <h1 className={styles.h}><Link href="/project2" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 2</Link></h1>

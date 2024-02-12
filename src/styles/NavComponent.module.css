@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+.nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #ffffff;
+    z-index: 1000; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navHeader {
+    display: inline;
+  }
+  
+  .navTitle {
+    display: inline-block;
+    font-size: 22px;
+    color: #48444B;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+  
+  .navBtn {
+    display: none;
+  }
+  
+  .navLinks {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .navLinks > a {
+    display: inline-block;
+    padding: 23px 10px;
+    text-decoration: none;
+    color: #48444B;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+  
+  .navLinks > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  #nav-check {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .navBtn {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .navBtn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+  
+    .navBtn > label:hover,
+    #nav-check:checked ~ .navBtn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    .navBtn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+  
+    .navLinks {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0;
+    }
+  
+    .navLinks > a {
+      display: block;
+      width: 100%;
+    }
+  
+    #nav-check:not(:checked) ~ .navLinks {
+      height: 0;
+    }
+  
+    #nav-check:checked ~ .navLinks {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  
