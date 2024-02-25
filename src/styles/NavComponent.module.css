@@ -133,3 +133,55 @@
     }
   }
   
+  .navCheck {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .navBtn {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navBtn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .navBtn > label:hover,
+    #nav-check:checked ~ .navBtn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .navBtn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .navLinks {
+        position: absolute;
+        display: none;
+        width: 100%;
+        background-color: #333;
+        overflow-y: auto; 
+        top: 50px;
+        left: 0;
+    }
+
+    .navLinks > a {
+        display: block;
+        padding: 23px 10px;
+        text-decoration: none;
+        color: #fff; 
+    }
+
+    #nav-check:checked ~ .navLinks {
+        display: block; 
+    }
+}

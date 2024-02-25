@@ -7,11 +7,11 @@ import Link from 'next/link';
 const NavComponent: React.FC = () => {
     return (
         <div className={styles.nav}>
+            <input type="checkbox" id="nav-check" className={styles.navCheck} />
             <div className={styles.navHeader}>
-            <Link href="/">
+                <Link href="/">
                     <Image className={styles.navTitle} src="/logo.png" alt="logo" width={50} height={50} />
                 </Link>
-
             </div>
             <div className={styles.navBtn}>
                 <label htmlFor="nav-check">
@@ -20,7 +20,6 @@ const NavComponent: React.FC = () => {
                     <span></span>
                 </label>
             </div>
-
             <div className={styles.navLinks}>
                 <a href="https://www.linkedin.com/in/elijahrc-chan" target="_blank">LinkedIn</a>
                 <a href="#" target="_blank">Resume</a>
