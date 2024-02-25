@@ -31,12 +31,12 @@ const Home: React.FC<HomeProps> = () => {
             </span>
           </div>
           <div className={styles.rightContainer}>
-            <span className={styles.viewp}>View Project</span>
+            <span className={styles.viewp}>View Projects</span>
             <ScrollAnimation />
           </div>
         </div>
 
-        <div className={styles.lowerContainer}>
+
           <div className={styles.upperBox}>
             <Link href="/project1">
               <CardComponent
@@ -46,16 +46,6 @@ const Home: React.FC<HomeProps> = () => {
                 It will ask multiple questions to determine if the user is addicted to drugs and the severity level."
               />
             </Link>
-            <Link href="project3">
-              <CardComponent
-                imageUrl="/tinypaws/4.png"
-                title="Project 3"
-                description="Tinypaws is a cat adoption website aimed to help people find their perfect cat. With bringing light to neglected cats in mind"
-              />
-            </Link>
-          </div>
-
-          <div className={styles.lowerBox}>
             <Link href="project2">
               <CardComponent
                 imageUrl="/keyboard/cover.png"
@@ -64,15 +54,26 @@ const Home: React.FC<HomeProps> = () => {
                 parts of a keyboard and what each part does."
               />
             </Link>
+          </div>
+
+           <div className={styles.lowerBox}>
+            <Link href="project3">
+              <CardComponent
+                imageUrl="/tinypaws/4.png"
+                title="Cat Adoption Website"
+                description="Tinypaws is a cat adoption website aimed to help people find their perfect cat. With bringing light to neglected cats in mind"
+              />
+            </Link>
             <Link href="#">
               <CardComponent
                 imageUrl="/images/psproject.jpg"
-                title="Project 4"
-                description="Description of project"
+                title="Cocoon"
+                description="Cocoon is a AI powered website that scans peoples resume and displays what are the skills they have and are missing
+                for the job they are applying for."
               />
             </Link>
-          </div>
-        </div>
+          </div> 
+
       </main>
     </>
   );
