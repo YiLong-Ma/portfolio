@@ -1,36 +1,36 @@
-// Nav.tsx
-
 import React, { useState } from 'react';
 import styles from '@/styles/NavComponent.module.css';
 import Image from 'next/image';
 
 const NavComponent: React.FC = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const [navOpen, setNavOpen] = useState(false);
-
-    const toggleNav = () => {
-        setNavOpen(!navOpen);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
     };
 
     return (
-        <div className={styles.nav}>
-            <input type="checkbox" id="nav-check" checked={navOpen} onChange={toggleNav} className={styles.navCheck} />
-            <div className={styles.navHeader}>
-                <a href="/"><Image src="/logo.png" alt="logo" width={50} height={50} className={styles.navTitle} /> </a>
+        <nav className={styles.navbar}>
+            <a href="/"className={styles.title}>
+            <Image src="/logo.png" alt="logo" width={50} height={50}  />
+            </a>
+            <div className={styles.menu} onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div className={styles.navBtn} onClick={toggleNav}>
-                <label htmlFor="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-            <div className={styles.navLinks}>
-                <a href="https://www.linkedin.com/in/elijahrc-chan/" target="_blank">LinkedIn</a>
-                <a href="/" target="_blank">Resume</a>
-                <a href="/">Contact</a>
-            </div>
-        </div>
+            <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
+                <li>
+                    <a href="https://www.linkedin.com/in/elijahrc-chan/" target='_blank' className={styles.link}>LinkedIn</a>
+                </li>
+                <li>
+                    <a href="#" target='_blank' className={styles.link}>Resume</a>
+                </li>
+                <li>
+                    <a href="#" target='_blank' className={styles.link}>Contacts</a>
+                </li>
+            </ul>
+        </nav>
     );
 };
 

@@ -6,7 +6,7 @@ import ImageRoulette from '@/components/imageRoulette';
 import BackgroundComponent from "@/components/Background";
 import NavComponent from '@/components/NavComponent';
 
-const project1: React.FC = () => {
+const project3: React.FC = () => {
     const images1 = ['/tinypaws/1.png', '/tinypaws/2.png', '/tinypaws/3.png', '/tinypaws/4.png', '/tinypaws/5.png'];
     const images2 = ['/tinypaws/L1.png', '/tinypaws/L2.png', '/tinypaws/lo-fi.png'];
     const images3 = ['/tinypaws/hi-fi.png'];
@@ -21,7 +21,7 @@ const project1: React.FC = () => {
                     <h1 className={styles.h}><Link href="/project1" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 1</Link></h1>
                     <h1 className={styles.h}><Link href="/project2" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 2</Link></h1>
                     <h1 className={styles.h1}><Link href=".project3" style={{ textDecoration: 'none', color: '#48444B' }}>Project 3</Link></h1>
-                    <h1 className={styles.h}><Link href="#" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 4</Link></h1>
+                    <h1 className={styles.h}><Link href="/project3" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 4</Link></h1>
                 </div>
                 <div className={styles.information}>
                     <div className={styles.imageContainer}>
@@ -91,4 +91,4 @@ const project1: React.FC = () => {
     );
 }
 
-export default project1;
+export default project3;
