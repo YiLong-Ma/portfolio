@@ -64,9 +64,9 @@ const Home: React.FC<HomeProps> = () => {
                 description="Tinypaws is a cat adoption website aimed to help people find their perfect cat. With bringing light to neglected cats in mind"
               />
             </Link>
-            <Link href="#">
+            <Link href="project4">
               <CardComponent
-                imageUrl="/images/psproject.jpg"
+                imageUrl="/cocoon/CocoonLogo.png"
                 title="Cocoon"
                 description="Cocoon is a AI powered website that scans peoples resume and displays what are the skills they have and are missing
                 for the job they are applying for."
