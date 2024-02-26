@@ -91,10 +91,18 @@ const project4: React.FC = () => {
                         <div className={styles.bodyText1}>
                             <div className={styles.infoTitle}>Logo Designs</div>
                             <div className={styles.infoText}>Originally, the website name was Future Quest, however it sounded too much like a game and not a professional website.
-                            So the team rebrand the website to Cocoon. The logo was designed to be simple and professional.
+                                So the team rebrand the website to Cocoon. The logo was designed to be simple and professional.
                             </div>
                         </div>
                         <div><ImageRoulette images={images4} id="roulette4" /></div>
+                    </div>
+
+                    <div className={styles.body1}>
+                        <div className={styles.bodyText1}>
+                            <div className={styles.infoTitle}>Blog Updates</div>
+                            <div className={styles.infoText}>"Update Coming Soon"
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
