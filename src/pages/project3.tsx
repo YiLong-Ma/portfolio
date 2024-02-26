@@ -21,7 +21,7 @@ const project3: React.FC = () => {
                     <h1 className={styles.h}><Link href="/project1" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 1</Link></h1>
                     <h1 className={styles.h}><Link href="/project2" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 2</Link></h1>
                     <h1 className={styles.h1}><Link href=".project3" style={{ textDecoration: 'none', color: '#48444B' }}>Project 3</Link></h1>
-                    <h1 className={styles.h}><Link href="/project3" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 4</Link></h1>
+                    <h1 className={styles.h}><Link href="/project4" style={{ textDecoration: 'none', color: '#CABDB9' }}>Project 4</Link></h1>
                 </div>
                 <div className={styles.information}>
                     <div className={styles.imageContainer}>
