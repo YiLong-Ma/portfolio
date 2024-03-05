@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '@/styles/NavComponent.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const NavComponent: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +12,8 @@ const NavComponent: React.FC = () => {
 
     return (
         <nav className={styles.navbar}>
-            <a href="/"className={styles.title}>
-            <Image src="/logo.png" alt="logo" width={50} height={50}  />
+            <a href="/" className={styles.title}>
+                <Image src="/logo.png" alt="logo" width={50} height={50} />
             </a>
             <div className={styles.menu} onClick={toggleMenu}>
                 <span></span>
@@ -27,7 +28,7 @@ const NavComponent: React.FC = () => {
                     <a href="#" target='_blank' className={styles.link}>Resume</a>
                 </li>
                 <li>
-                    <a href="#" target='_blank' className={styles.link}>Contacts</a>
+                    <Link href="/contacts" className={styles.link}>Contacts</Link>
                 </li>
             </ul>
         </nav>
