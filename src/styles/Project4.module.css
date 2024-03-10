@@ -35,6 +35,10 @@
     margin-top: 10vh;
 }
 
+.mock{
+    margin-top: 50px;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -138,4 +142,24 @@
     margin-top: 20px;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
+}
+
+.body2 {
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bodyText2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #48444B;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 20rem;
 }

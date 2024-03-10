@@ -5,12 +5,13 @@ import React from 'react';
 import ImageRoulette from '@/components/imageRoulette';
 import BackgroundComponent from "@/components/Background";
 import NavComponent from '@/components/NavComponent';
+import Image from 'next/image';
 
 const project4: React.FC = () => {
     const images1 = ['/cocoon/1.png', '/cocoon/2.png',];
     const images2 = ['/cocoon/3.png', '/cocoon/4.png', '/cocoon/5.png'];
     const images3 = ['/cocoon/8.png', '/cocoon/9.png',];
-    const images4 = ['/cocoon/6.png', '/cocoon/7.png',];
+    const images4 = ['/cocoon/6.png', '/cocoon/7.png', '/cocoon/10.png'];
 
 
     return (
@@ -43,7 +44,10 @@ const project4: React.FC = () => {
 
                 <ScrollAnimation />
 
+                <Image src='/cocoon/mock.png' width={1020} height={740} className={styles.mock} />
+
                 <div className={styles.body}>
+
                     <div className={styles.body1}>
                         <div><ImageRoulette images={images1} id="roulette1" /></div>
                         <div className={styles.bodyText1}>
@@ -97,12 +101,24 @@ const project4: React.FC = () => {
                         <div><ImageRoulette images={images4} id="roulette4" /></div>
                     </div>
 
-                    <div className={styles.body1}>
-                        <div className={styles.bodyText1}>
-                            <div className={styles.infoTitle}>Blog Updates</div>
+                    <div className={styles.body2}>
+
+                        <div>
+                            <div className={styles.infoTitle}>The issue</div>
                             <div className={styles.infoText}>"Update Coming Soon"
                             </div>
                         </div>
+                        <div>
+                            <div className={styles.infoTitle}>The Solution</div>
+                            <div className={styles.infoText}>"Update Coming Soon"
+                            </div>
+                        </div>
+                        <div>
+                            <div className={styles.infoTitle}>Future Updates</div>
+                            <div className={styles.infoText}>"Update Coming Soon"
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </main>
