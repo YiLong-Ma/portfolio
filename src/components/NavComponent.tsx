@@ -25,7 +25,7 @@ const NavComponent: React.FC = () => {
                     <a href="https://www.linkedin.com/in/elijahrc-chan/" target='_blank' className={styles.link}>LinkedIn</a>
                 </li>
                 <li>
-                    <a href="#" target='_blank' className={styles.link}>Resume</a>
+                    <a href="https://github.com/YiLong-Ma" target='_blank' className={styles.link}>Github</a>
                 </li>
                 <li>
                     <Link href="/contacts" className={styles.link}>Contacts</Link>

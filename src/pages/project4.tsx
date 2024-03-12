@@ -102,20 +102,24 @@ const project4: React.FC = () => {
                     </div>
 
                     <div className={styles.body2}>
-
                         <div>
                             <div className={styles.infoTitle}>The issue</div>
-                            <div className={styles.infoText}>"Update Coming Soon"
+                            <div className={styles.infoText2}>Some industries nowadays are dying out because of technology. 
+                            This means that people are losing their jobs and are unable to find new ones. This is forcing for more competition in other job markets
+                            and making it harder for people to find jobs. 
                             </div>
                         </div>
                         <div>
                             <div className={styles.infoTitle}>The Solution</div>
-                            <div className={styles.infoText}>"Update Coming Soon"
+                            <div className={styles.infoText2}>Cocoon is the solution to helping people find jobs.
+                            It is a website that uses AI to scan resumes and displays the missing skills that the user needs to get the job they want. Then it will
+                            display a list of courses that the user can take to get the skills they need.
                             </div>
                         </div>
                         <div>
                             <div className={styles.infoTitle}>Future Updates</div>
-                            <div className={styles.infoText}>"Update Coming Soon"
+                            <div className={styles.infoText2}>Currently Cocoon only recommends courses from BCIT. In the future, we plan to expand the website to recommend courses from other institutions.
+                            We also want to partner want to partner with companies to offer internships to students who have completed the courses.
                             </div>
                         </div>
 
