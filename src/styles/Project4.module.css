@@ -176,3 +176,42 @@
     font-weight: 400;
     max-width: 20rem;
 }
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+    .information {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .imageContainer {
+        overflow-y: hidden;
+    }
+
+    .infoDisplay {
+        max-width: 100%;
+    }
+
+    .body1 {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .bodyText1 {
+        width: 100%;
+    }
+
+    .imageRoulette {
+        width: 100%;
+    }
+
+    .infoText,
+    .bodyText1,
+    .bodyText2 {
+        width: 100%; /* Adjust width to fit container */
+    }
+
+    .infoText2 {
+        max-width: 100%; /* Adjust max-width to fit container */
+    }
+}

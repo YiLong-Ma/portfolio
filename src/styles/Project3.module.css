@@ -139,3 +139,79 @@
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
 }
+
+@media (max-width: 767px) {
+    .main {
+        height: auto;
+        margin-top: 5vh;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .information {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .imageContainer {
+        overflow-y: hidden;
+    }
+
+    .infoText {
+        width: auto;
+    }
+
+    .body1 {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .bodyText1 {
+        width: auto;
+    }
+
+    .btn {
+        width: auto;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .information {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .imageContainer {
+        overflow-y: hidden;
+    }
+
+    .infoDisplay {
+        max-width: 100%;
+    }
+
+    .video {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .body1 {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .bodyText1 {
+        width: 100%; 
+    }
+
+    .imageRoulette {
+        width: 100%; 
+    }
+}
+
