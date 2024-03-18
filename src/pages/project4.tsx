@@ -44,7 +44,7 @@ const project4: React.FC = () => {
 
                 <ScrollAnimation />
 
-                <Image src='/cocoon/mock.png' width={1020} height={740} className={styles.mock} />
+                <Image src='/cocoon/mock.png' width={1020} height={740} className={styles.mock} alt="cocoon logo"/>
 
                 <div className={styles.body}>
 
@@ -119,7 +119,7 @@ const project4: React.FC = () => {
                         <div>
                             <div className={styles.infoTitle}>Future Updates</div>
                             <div className={styles.infoText2}>Currently Cocoon only recommends courses from BCIT. In the future, we plan to expand the website to recommend courses from other institutions.
-                            We also want to partner want to partner with companies to offer internships to students who have completed the courses.
+                            We also want to partner want to partner with companies to offer internships to students who have completed the courses. 
                             </div>
                         </div>
 
