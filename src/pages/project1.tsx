@@ -38,6 +38,11 @@ const project1: React.FC = () => {
                             The app is designed to be user-friendly, with a mascot named Humphrey to guide users through the app.
                             This app is not meant to replace professional help, but to provide a starting point for those who may need it.
                         </div>
+                        <button className={styles.btn}>
+                            <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/jwQtp1e8FBRAKCCgcckOVG/Baja-Design?type=design&node-id=246-29&t=HTH3VeL2Nk4iXiBh-1&scaling=scale-down&page-id=243%3A29&starting-point-node-id=246%3A29&mode=design" target='_blank'>
+                                See Prototype
+                            </a>
+                        </button>
                     </div>
                 </div>
 

@@ -36,6 +36,11 @@ const project3: React.FC = () => {
                             Tinypaws wanted to be easy access and not a hastle to use. With many features like an events page to showcase cats that are up for adoption
                             , or a blog page to read about the latest news on cats, Tinypaws is the perfect place to find your new furry friend.
                         </div>
+                        <button className={styles.btn}>
+                            <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/jwQtp1e8FBRAKCCgcckOVG/Baja-Design?type=design&node-id=246-29&t=HTH3VeL2Nk4iXiBh-1&scaling=scale-down&page-id=243%3A29&starting-point-node-id=246%3A29&mode=design" target='_blank'>
+                                See Prototype
+                            </a>
+                        </button>
                     </div>
                 </div>
 

@@ -39,15 +39,48 @@ const project4: React.FC = () => {
                             Cocoon intelligently matches an individual's skills with their chosen career, ensuring a perfect synergy between
                             aspirations and qualifications.
                         </div>
+                        <button className={styles.btn}>
+                            <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://cocoon-one.vercel.app/" target='_blank'>
+                                See Project
+                            </a>
+                        </button>
                     </div>
                 </div>
 
                 <ScrollAnimation />
 
-                <Image src='/cocoon/mock.png' width={1020} height={740} className={styles.mock} alt="cocoon logo"/>
+                <Image src='/cocoon/mock.png' width={1020} height={740} className={styles.mock} alt="cocoon logo" />
+
+
+                <div className={styles.body2}>
+                    <div>
+                        <div className={styles.infoTitle}>The Challenge</div>
+                        <div className={styles.infoText2}>
+                            Today's job market is full of uncertainties, leaving many unsure about advancing in their careers.
+                            Cocoon aims to bridge this gap by providing personalized career guidance, identifying skills gaps,
+                            and offering targeted recommendations for education and training. This empowers users to align their
+                            abilities with their career goals effectively.
+                        </div>
+                    </div>
+                    <div>
+                        <div className={styles.infoTitle}>My role</div>
+                        <div className={styles.infoText2}>During the duration of this project, I was responsible for the design and
+                            and user testing of the website. I worked closely with the team to ensure that the website was professional
+                            and easy to understand/navigate. I also participated in the drafts of logo creation and branding of the website.
+                        </div>
+                    </div>
+                    <div>
+                        <div className={styles.infoTitle}>The process</div>
+                        <div className={styles.infoText2}>
+                            The process commenced with a thorough exploration of user requirements and the overall market landscape.
+                            By conducting user surveys, interviews, and competitive assessments, we gleaned valuable insights that
+                            set the groundwork for the project's objectives. This stage played a pivotal role in pinpointing the essential
+                            features necessary for Cocoon.
+                        </div>
+                    </div>
+                </div>
 
                 <div className={styles.body}>
-
                     <div className={styles.body1}>
                         <div><ImageRoulette images={images1} id="roulette1" /></div>
                         <div className={styles.bodyText1}>
@@ -104,26 +137,26 @@ const project4: React.FC = () => {
                     <div className={styles.body2}>
                         <div>
                             <div className={styles.infoTitle}>The issue</div>
-                            <div className={styles.infoText2}>Some industries nowadays are dying out because of technology. 
-                            This means that people are losing their jobs and are unable to find new ones. This is forcing for more competition in other job markets
-                            and making it harder for people to find jobs. 
+                            <div className={styles.infoText2}>Some industries nowadays are dying out because of technology.
+                                This means that people are losing their jobs and are unable to find new ones. This is forcing for more competition in other job markets
+                                and making it harder for people to find jobs.
                             </div>
                         </div>
                         <div>
                             <div className={styles.infoTitle}>The Solution</div>
                             <div className={styles.infoText2}>Cocoon is the solution to helping people find jobs.
-                            It is a website that uses AI to scan resumes and displays the missing skills that the user needs to get the job they want. Then it will
-                            display a list of courses that the user can take to get the skills they need.
+                                It is a website that uses AI to scan resumes and displays the missing skills that the user needs to get the job they want. Then it will
+                                display a list of courses that the user can take to get the skills they need.
                             </div>
                         </div>
                         <div>
                             <div className={styles.infoTitle}>Future Updates</div>
                             <div className={styles.infoText2}>Currently Cocoon only recommends courses from BCIT. In the future, we plan to expand the website to recommend courses from other institutions.
-                            We also want to partner want to partner with companies to offer internships to students who have completed the courses. 
+                                We also want to partner want to partner with companies to offer internships to students who have completed the courses.
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </main>
         </>

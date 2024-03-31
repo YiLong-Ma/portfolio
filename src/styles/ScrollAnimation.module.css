@@ -1,6 +1,7 @@
 \\css for mouse scroll animation
 .mouseScroll {
   margin: auto;
+  cursor: pointer;
 }
 .mouseScroll span {
   display: block;

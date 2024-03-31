@@ -1,4 +1,3 @@
-// Home.tsx
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
@@ -6,11 +5,19 @@ import ScrollAnimation from "../components/ScrollAnimation";
 import CardComponent from "../components/CardComponent";
 import BackgroundComponent from "@/components/Background";
 import NavComponent from "@/components/NavComponent";
-
+import { useRef } from 'react';
 
 interface HomeProps { }
 
 const Home: React.FC<HomeProps> = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleScrollToProjects = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -31,49 +38,46 @@ const Home: React.FC<HomeProps> = () => {
             </span>
           </div>
           <div className={styles.rightContainer}>
-            <span className={styles.viewp}>View Projects</span>
+            <span className={styles.viewp} onClick={handleScrollToProjects}>View Projects</span>
             <ScrollAnimation />
           </div>
         </div>
-
-
-          <div className={styles.upperBox}>
-            <Link href="/project1">
-              <CardComponent
-                imageUrl="/HumphreyIcons/newHabitsCover.png"
-                title="New Habits"
-                description="New Habits is a app that helps people identify drug addiction for themselves or their loved ones. 
+        <div ref={scrollRef} /> {/* This will be used as a reference for scrolling */}
+        <div className={styles.upperBox}>
+          <Link href="/project1">
+            <CardComponent
+              imageUrl="/HumphreyIcons/newHabitsCover.png"
+              title="New Habits"
+              description="New Habits is a app that helps people identify drug addiction for themselves or their loved ones. 
                 It will ask multiple questions to determine if the user is addicted to drugs and the severity level."
-              />
-            </Link>
-            <Link href="project2">
-              <CardComponent
-                imageUrl="/keyboard/cover.png"
-                title="Keyboard Animation"
-                description="This is a short 1 minute animation created in After Effects. The animation goes through different
+            />
+          </Link>
+          <Link href="project2">
+            <CardComponent
+              imageUrl="/keyboard/cover.png"
+              title="Keyboard Animation"
+              description="This is a short 1 minute animation created in After Effects. The animation goes through different
                 parts of a keyboard and what each part does."
-              />
-            </Link>
-          </div>
-
-           <div className={styles.lowerBox}>
-            <Link href="project3">
-              <CardComponent
-                imageUrl="/tinypaws/4.png"
-                title="Cat Adoption Website"
-                description="Tinypaws is a cat adoption website aimed to help people find their perfect cat. With bringing light to neglected cats in mind"
-              />
-            </Link>
-            <Link href="project4">
-              <CardComponent
-                imageUrl="/cocoon/CocoonLogo.png"
-                title="Cocoon"
-                description="Cocoon is a AI powered website that scans peoples resume and displays what are the skills they have and are missing
+            />
+          </Link>
+        </div>
+        <div className={styles.lowerBox}>
+          <Link href="project3">
+            <CardComponent
+              imageUrl="/tinypaws/4.png"
+              title="Cat Adoption Website"
+              description="Tinypaws is a cat adoption website aimed to help people find their perfect cat. With bringing light to neglected cats in mind"
+            />
+          </Link>
+          <Link href="project4">
+            <CardComponent
+              imageUrl="/cocoon/CocoonLogo.png"
+              title="Cocoon"
+              description="Cocoon is a AI powered website that scans peoples resume and displays what are the skills they have and are missing
                 for the job they are applying for."
-              />
-            </Link>
-          </div> 
-
+            />
+          </Link>
+        </div>
       </main>
     </>
   );
