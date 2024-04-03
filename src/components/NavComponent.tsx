@@ -30,6 +30,9 @@ const NavComponent: React.FC = () => {
                 <li>
                     <Link href="/contacts" className={styles.link}>Contacts</Link>
                 </li>
+                <li>
+                    <Link href="/gallery" className={styles.link}>Gallery</Link>
+                </li>
             </ul>
         </nav>
     );

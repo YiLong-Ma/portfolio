@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  }
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.Header{
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.Mockups{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.img{
+    width: 550px;
+    height: auto;
+}
+
+.btn {
+    width: 15vh;
+    height: 4vh;
+    border: 0.2rem solid #CABDB9;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #48444B;
+    font-size: 1.5vh;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn:hover {
+    background-color: #CABDB9;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: auto;
+}

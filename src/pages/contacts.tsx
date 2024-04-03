@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from '@/styles/contacts.module.css';
 import NavComponent from '@/components/NavComponent';
+import BackgroundComponent from '@/components/Background';
 
 const Contacts = () => {
     return (
 
         <div className={styles.container}>
             <NavComponent />
+            <BackgroundComponent />
 
             <h1>Let's Get In Touch</h1>
 
