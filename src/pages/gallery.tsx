@@ -49,6 +49,10 @@ const Gallery = () => {
                     <h2>Camera Tracing ( Adobe Ai)</h2>
                     <Image className={styles.img} src="/gallery/C1.png" alt="A4" width={1215} height={1301} />
                 </div>
+                <div className={styles.display}>
+                    <h2>Car Poster ( Adobe PS)</h2>
+                    <Image className={styles.img} src="/gallery/DriftRally.jpg" alt="A4" width={2625} height={3375} />
+                </div>
 
             </div>
         </div >
