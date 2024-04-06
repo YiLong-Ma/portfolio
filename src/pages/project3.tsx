@@ -37,7 +37,7 @@ const project3: React.FC = () => {
                             , or a blog page to read about the latest news on cats, Tinypaws is the perfect place to find your new furry friend.
                         </div>
                         <button className={styles.btn}>
-                            <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/jwQtp1e8FBRAKCCgcckOVG/Baja-Design?type=design&node-id=246-29&t=HTH3VeL2Nk4iXiBh-1&scaling=scale-down&page-id=243%3A29&starting-point-node-id=246%3A29&mode=design" target='_blank'>
+                            <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/RhxeuuIO366EJiKVQJbZMJ/tinypaws---purradise?type=design&node-id=265-5512&t=KevRorScvSlb8S9x-0&scaling=min-zoom&page-id=265%3A3056&starting-point-node-id=265%3A5512&show-proto-sidebar=1" target='_blank'>
                                 See Prototype
                             </a>
                         </button>
@@ -83,7 +83,7 @@ const project3: React.FC = () => {
                                 users to see.
                             </div>
                             <button className={styles.btn}>
-                                <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/jwQtp1e8FBRAKCCgcckOVG/Baja-Design?type=design&node-id=246-29&t=HTH3VeL2Nk4iXiBh-1&scaling=scale-down&page-id=243%3A29&starting-point-node-id=246%3A29&mode=design" target='_blank'>
+                                <a style={{ textDecoration: 'none', color: '#48444B' }} href="https://www.figma.com/proto/RhxeuuIO366EJiKVQJbZMJ/tinypaws---purradise?type=design&node-id=265-5512&t=KevRorScvSlb8S9x-0&scaling=min-zoom&page-id=265%3A3056&starting-point-node-id=265%3A5512&show-proto-sidebar=1" target='_blank'>
                                     See Prototype
                                 </a>
                             </button>
