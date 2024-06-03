@@ -26,7 +26,7 @@ const Homepage = () => {
           </h1>
           {/* DESC */}
           <p className="md:text-xl">
-            Hello! I&apos;m Elijah Chan, a digital designer and front-end developer
+            Hello! I'm Elijah Chan, a digital designer and front-end developer
             graduated from BCIT. I specialize in creating beautiful and
             functional websites and applications. I built this portfolio to
             showcase my work and skills. Feel free to take a look around!
