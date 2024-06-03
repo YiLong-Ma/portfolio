@@ -1,63 +1,66 @@
-\\css for mouse scroll animation
 .mouseScroll {
-  margin: auto;
-  cursor: pointer;
-}
-.mouseScroll span {
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 8px solid #000000;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  margin: 0 0 3px 5px;
-}
-.mouseScroll .mouse {
-  height: 21px;
-  width: 14px;
-  border-radius: 10px;
-  transform: none;
-  border: 2px solid #000000;
-  top: 170px;
-}
-.mouseScroll .downArrow1,
-.mouseScroll .downArrow2,
-.mouseScroll .downArrow3 {
-  animation: mouseScroll 1.5s infinite;
-  margin-top: 6px;
-}
-.mouseScroll .downArrow1 {
-  animation-delay: 0.1s;
-  animation-direction: alternate;
-  margin-top: 10px;
-}
-.mouseScroll .downArrow2 {
-  animation-delay: 0.2s;
-  animation-direction: alternate;
-}
-.mouseScroll .downArrow3 {
-  animation-delay: 0.3s;
-  animation-direction: alternate;
-}
-.mouseScroll .mouseIn {
-  height: 5px;
-  width: 2px;
-  display: block;
-  margin: 5px auto;
-  background: #000000;
-  position: relative;
-}
-@keyframes mouseScroll {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
+    margin: auto;
+    cursor: pointer;
   }
-  50% {
-    opacity: 0;
-    transform: translateY(10px);
+  .mouseScroll span {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #000000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin: 0 0 3px 5px;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  .mouseScroll .mouse {
+    height: 30px; 
+    width: 20px; 
+    border-radius: 15px;
+    border: 2px solid #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px; 
   }
-}
+  .mouseScroll .downArrow1,
+  .mouseScroll .downArrow2,
+  .mouseScroll .downArrow3 {
+    animation: mouseScroll 1.5s infinite;
+    margin-top: 6px;
+  }
+  .mouseScroll .downArrow1 {
+    animation-delay: 0.1s;
+    animation-direction: alternate;
+    margin-top: 10px;
+  }
+  .mouseScroll .downArrow2 {
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+  }
+  .mouseScroll .downArrow3 {
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+  }
+  .mouseScroll .mouseIn {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: #000000;
+    position: relative;
+  }
+  @keyframes mouseScroll {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
