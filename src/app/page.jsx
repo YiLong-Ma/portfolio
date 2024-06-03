@@ -22,11 +22,11 @@ const Homepage = () => {
         <div className="h-auto lg:h-full lg:w-1/2 flex flex-col gap-8 items-left justify-center">
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold">
-            Digital Designer & Front-End Developer
+            Digital Designer &amp; Front-End Developer
           </h1>
           {/* DESC */}
           <p className="md:text-xl">
-            Hello! I'm Elijah Chan, a digital designer and front-end developer
+            Hello! I&apos;m Elijah Chan, a digital designer and front-end developer
             graduated from BCIT. I specialize in creating beautiful and
             functional websites and applications. I built this portfolio to
             showcase my work and skills. Feel free to take a look around!
